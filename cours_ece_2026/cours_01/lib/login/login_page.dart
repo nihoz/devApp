@@ -11,16 +11,16 @@ class LoginPage extends StatelessWidget {
         title: const Text('Log in or sign up', 
           style: TextStyle(fontWeight: FontWeight.bold)
         ),
-        centerTitle: false, // Titre aligné à gauche
+        centerTitle: false, 
       ),
-      body: Center( // Centre le rectangle au milieu de l'écran
+      body: Center( 
         child: Container(
-          constraints: const BoxConstraints(maxWidth: 400), // Largeur du rectangle
+          constraints: const BoxConstraints(maxWidth: 400), 
           padding: const EdgeInsets.all(24.0),
           child: Column(
-            mainAxisSize: MainAxisSize.min, // Le rectangle s'adapte à la hauteur du contenu
+            mainAxisSize: MainAxisSize.min, 
             children: [
-              // Champ Email avec icône et bordure arrondie de 12px
+
               TextField(
                 decoration: InputDecoration(
                   prefixIcon: const Icon(Icons.email_outlined),
@@ -32,7 +32,7 @@ class LoginPage extends StatelessWidget {
               ),
               const SizedBox(height: 16),
 
-              // Bouton Continuer Bleu
+
               SizedBox(
                 width: double.infinity,
                 height: 48,
@@ -45,7 +45,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
 
-              // Séparateur "Or" avec lignes grises
+              
               const Padding(
                 padding: EdgeInsets.symmetric(vertical: 20),
                 child: Row(
@@ -60,7 +60,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
 
-              // Boutons Sociaux (Utilisation du widget personnalisé ci-dessous)
+              
               const SocialLoginButton(
                 label: 'Apple',
                 iconPath: 'assets/apple.svg',
@@ -77,6 +77,36 @@ class LoginPage extends StatelessWidget {
               ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+class SocialLoginButton extends StatelessWidget {
+  final String label;
+  final String iconPath;
+
+  const SocialLoginButton({
+    super.key,
+    required this.label,
+    required this.iconPath,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: double.infinity,
+      height: 48,
+      child: OutlinedButton.icon(
+        onPressed: () {},
+        icon: SvgPicture.asset(iconPath, width: 20), 
+        label: Text(
+          'Continue with $label',
+          style: const TextStyle(color: Colors.black),
+        ),
+        style: OutlinedButton.styleFrom(
+          side: const BorderSide(color: Color(0xFFE0E0E0)),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
       ),
     );
