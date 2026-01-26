@@ -5,6 +5,13 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Log in or sign up'),
+        centerTitle: false, 
+      ),
+      
+    
+    );
   }
 }
