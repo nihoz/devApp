@@ -11,6 +11,35 @@ class LoginPage extends StatelessWidget {
         centerTitle: false, 
       ),
       
+      body: Padding(
+        padding: const EdgeInsets.all(20.0), 
+        child: Column(
+          children: [
+
+            TextField(
+              decoration: InputDecoration(
+                prefixIcon: const Icon(Icons.email_outlined), 
+                hintText: 'Mail', 
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+            ),
+            
+            const SizedBox(height: 20), 
+            
+
+            SizedBox(
+              width: double.infinity, 
+              child: FilledButton(
+                onPressed: () {}, 
+                child: const Text('Continue'),
+              ),
+            ),
+          ],
+        ),
+      ),
+      
     
     );
   }
