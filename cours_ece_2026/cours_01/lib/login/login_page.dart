@@ -63,17 +63,17 @@ class LoginPage extends StatelessWidget {
               
               const SocialLoginButton(
                 label: 'Apple',
-                iconPath: 'assets/apple.svg',
+                iconPath: 'assets/apple_logo.svg',
               ),
               const SizedBox(height: 12),
               const SocialLoginButton(
                 label: 'Google',
-                iconPath: 'assets/google.svg',
+                iconPath: 'assets/google_logo.svg',
               ),
               const SizedBox(height: 12),
               const SocialLoginButton(
                 label: 'Facebook',
-                iconPath: 'assets/facebook.svg',
+                iconPath: 'assets/facebook_logo.svg',
               ),
             ],
           ),
