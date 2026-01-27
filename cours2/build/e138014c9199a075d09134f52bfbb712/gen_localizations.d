@@ -1,0 +1,1 @@
+ /Users/ninongroznykh/Desktop/devApp/cours2/lib/l10n/app_localizations_fr.dart /Users/ninongroznykh/Desktop/devApp/cours2/lib/l10n/app_localizations.dart:  /Users/ninongroznykh/Desktop/devApp/cours2/l10n.yaml /Users/ninongroznykh/Desktop/devApp/cours2/lib/l10n/app_fr.arb
